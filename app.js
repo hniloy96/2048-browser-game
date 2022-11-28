@@ -332,7 +332,7 @@ function fullBoard() {
 function checkStatus() {
     for (let i = 0; i < playBoard.length; i++){
         for (let j = 0; j < playBoard.length; j++){
-            if (!fullBoard() || playBoard[i][j] === 32){
+            if (!fullBoard() || playBoard[i][j] === 2048){
                 running = false
                 postGame.classList.add('show')
                 yourScoreText.innerText = `Your score was ${score}`
